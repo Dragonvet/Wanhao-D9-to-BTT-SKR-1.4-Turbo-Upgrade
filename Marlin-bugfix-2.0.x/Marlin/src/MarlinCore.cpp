@@ -955,7 +955,7 @@ void setup() {
   if (mcu & 32) SERIAL_ECHOLNPGM(STR_SOFTWARE_RESET);
   HAL_clear_reset_source();
 
-  serialprintPGM(GET_TEXT(MSG_MARLIN));
+  serialprintPGM(GET_TEXT(MSG_MAIN));
   SERIAL_CHAR(' ');
   SERIAL_ECHOLNPGM(SHORT_BUILD_VERSION);
   SERIAL_EOL();
@@ -1199,5 +1199,4 @@ void loop() {
     #ifdef __AVR__
       || true           // Loop forever on slower (AVR) boards
     #endif
-  );
-}
+  );}

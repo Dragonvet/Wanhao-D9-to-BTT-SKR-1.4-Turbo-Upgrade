@@ -210,9 +210,7 @@
   #define ENABLED(b)         _CAT(SWITCH_ENABLED_, b)
   #define DISABLED(b)        !ENABLED(b)
   #define ANY(A,B)           (ENABLED(A) || ENABLED(B))
-  #define EITHER(A,B)        (ENABLED(A) || ENABLED(B))
   #define BOTH(A,B)          (ENABLED(A) && ENABLED(B))
-  #define NONE(A,B)          (DISABLED(A) && DISABLED(B))
 
   // Remove compiler warning on an unused variable
   #ifndef UNUSED
